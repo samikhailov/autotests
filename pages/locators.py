@@ -8,3 +8,12 @@ class MainPageLocators():
 class LoginPageLocators():
     LOGIN_FORM = (By.CSS_SELECTOR, "#id_login-username")
     REGISTER_FORM = (By.CSS_SELECTOR, "#id_login-password")
+
+
+class ProductPageLocators():
+    ADD_BUTTON = (By.CSS_SELECTOR, '.btn-add-to-basket')
+    OFFER_NAME = (By.CSS_SELECTOR, '.product_main h1')
+    OFFER_NAME_IN_ALERT = (By.XPATH, '//*[@id="messages"]/div[1]//strong')
+    PRICE = (By.CSS_SELECTOR, '.product_main p.price_color')
+    PRICE_IN_ALERT = (By.XPATH, '//*[@id="messages"]/div[3]//strong')
+    ALERTS = (By.CSS_SELECTOR, '#messages')
