@@ -16,4 +16,4 @@ class ProductPageLocators():
     OFFER_NAME_IN_ALERT = (By.XPATH, '//*[@id="messages"]/div[1]//strong')
     PRICE = (By.CSS_SELECTOR, '.product_main p.price_color')
     PRICE_IN_ALERT = (By.XPATH, '//*[@id="messages"]/div[3]//strong')
-    ALERTS = (By.CSS_SELECTOR, '#messages')
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, '#messages')
