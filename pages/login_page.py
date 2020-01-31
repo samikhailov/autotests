@@ -1,5 +1,6 @@
 from .base_page import BasePage
 from selenium import webdriver
+from .locators import LoginPageLocators
 
 
 class LoginPage(BasePage):
@@ -12,7 +13,7 @@ class LoginPage(BasePage):
         assert 'login' in self.browser.current_url, 'Invalid login page URL'
 
     def should_be_login_form(self):
-        assert self.is_element_present(*LOGIN_FORM), 'Login form not found'
+        assert self.is_element_present(*LoginPageLocators.LOGIN_FORM), 'Login form not found'
 
     def should_be_register_form(self):
-        assert self.is_element_present(*REGISTER_FORM), 'Register form not found'
+        assert self.is_element_present(*LoginPageLocators.REGISTER_FORM), 'Register form not found'
